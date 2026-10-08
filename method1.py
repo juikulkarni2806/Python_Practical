@@ -1,3 +1,3 @@
 text="Welcome to IMCC!"
 #sample strip
-print(text.strip)
+print(text.strip())
