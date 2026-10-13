@@ -19,12 +19,24 @@
 # print("4th line:", lines[3].strip())
 #Take a Sentence from user, spilt it into words, and store them in a list.print the longest word.
 # 1. Take a sentence from the user
-sentence = input("Enter a sentence: ")
+#sentence = input("Enter a sentence: ")
 
 # 2. Split it into words and store them in a list
-words = sentence.split()
+#words = sentence.split()
 
 # 3. Find and print the longest word
-longest_word = max(words, key=len)
+#longest_word = max(words, key=len)
 
-print("The longest word is:", longest_word)
+#print("The longest word is:", longest_word)
+#Read a file spilt its content into words,and store them in a list.
+#i.print the Total Number of words
+#ii.Print all unique Words.
+# Open and read the file
+with open('jui.txt', 'r') as file:
+    words = file.read().split()
+
+# i. Print total number of words
+print("Total words:", len(words))
+
+# ii. Print all unique words
+print("Unique words:", set(words))
